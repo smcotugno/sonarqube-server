@@ -1,0 +1,17 @@
+# Default values for service-account.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+global:
+  clusterType: "openshift"
+
+namespace: "sonarqube"
+name: "sonarqube-sa"
+
+create: true
+clusterType: "ocp4"
+sccs: [anyuid]
+roles: []
+
+#  - apiGroups: []
+#    resources: []
+#    verbs: []
